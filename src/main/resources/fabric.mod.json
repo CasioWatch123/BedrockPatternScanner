@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "bedrock-pattern-scanner",
+	"version": "${version}",
+	"name": "Bedrock Pattern Scanner",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"CasioWatch123"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/CasioWatch123/BedrockPatternScanner"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bedrock-pattern-scanner/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bedrockscanner.BedrockPatternScanner"
+		],
+		"client": [
+			"com.bedrockscanner.BedrockPatternScannerClient"
+		]
+	},
+	"mixins": [
+		"bedrock-pattern-scanner.mixins.json",
+		{
+			"config": "bedrock-pattern-scanner.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
