@@ -11,7 +11,7 @@ import net.minecraft.util.Formatting;
 
 public class ScannerCommand {
     private final LiteralArgumentBuilder<FabricClientCommandSource> rootCommand =
-            ClientCommandManager.literal("patternScan");
+            ClientCommandManager.literal("bedrockScan");
     
     public ScannerCommand() {
         rootCommand.then(ClientCommandManager.argument("number", IntegerArgumentType.integer())
